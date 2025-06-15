@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Sitio oficial del Hotel Descanso Tropical en Juangriego,  Isla de Margarita, Venezuela. Disfruta de hospedaje, tours, comida y más.">
+  <meta name="keywords" content="hotel, playa el yaque, margarita, venezuela, alojamiento, turismo, juangriego, descanso, tropical">
+  <meta name="author" content="Ing. Manuel Decabo Isea">
+
+   <title>🏝️ Hotel Descanso Tropical | Tu Refugio Familiar en el Corazón de Juan Griego -  Isla de Margarita</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+    <!--  <img src="img/icono.png" alt="Logo Hotel" class="logo" />-->
+      <h2>🏝️ Hotel Descanso Tropical</h2>
+     <!-- Botón hamburguesa (visible solo en móvil) -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menú">&#9776;</button>
+
+    <nav class="nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Bienvenidos a Tu Refugio Familiar en el Corazón de Juangriego</h1>
+      <p>Disfruta de la mejor experiencia vacacional en la paradisíaca Isla de Margarita, Venezuela.</p>
+      <a href="https://wa.me/584123456789"  target="_blank" class="btn-primary">Reserva ahora</a>
+    </div>
+  </section>
+
+  <!-- Habitaciones Section -->
+  <section id="habitaciones" class="section">
+    <div class="container">
+      <h2 class="section-title">Nuestras Habitaciones</h2>
+      <div class="room-grid">
+        <div class="card">
+          <img src="img/hab/estandar.png" alt="Habitación Estándar" />
+          <h3>Habitación Estándar</h3>
+          <p>Ideal para viajeros solos o parejas. Confort y privacidad asegurados.</p>
+          <p class="price">$00/noche</p>
+          <a href="https://wa.me/584123456789"  target="_blank" class="btn-secondary">Reservar</a>
+        </div>
+        <div class="card">
+          <img src="img/hab/junior.png" alt="Suite Junior" />
+          <h3>Suite Junior</h3>
+          <p>Espacio amplio con vista al mar y comodidades adicionales.</p>
+          <p class="price">$000/noche</p>
+          <a href="https://wa.me/584123456789"  target="_blank" class="btn-secondary">Reservar</a>
+        </div>
+        <div class="card">
+          <img src="img/hab/presidencial.png" alt="Suite Presidencial" />
+          <h3>Suite Presidencial</h3>
+          <p>La mejor experiencia de lujo con vistas panorámicas.</p>
+          <p class="price">$000/noche</p>
+          <a href="https://wa.me/584123456789"  target="_blank" class="btn-secondary">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section id="servicios" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Servicios del Hotel</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <span>🍽️</span>
+          <h3>Restaurante</h3>
+          <p>Disfruta de platos locales e internacionales.</p>
+        </div>
+        <div class="service-card">
+          <span>🏊</span>
+          <h3>Piscina</h3>
+          <p>Área recreativa ideal para relajarse.</p>
+        </div>
+        <div class="service-card">
+          <span>🛖</span>
+          <h3>Estacionamiento</h3>
+          <p>Estacionamiento Privado.</p>
+        </div>
+        <div class="service-card">
+          <span>🧘</span>
+          <h3>Spa & Wellness</h3>
+          <p>Tratamientos relajantes y masajes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Section -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section-title">Galería</h2>
+      <div class="gallery-grid">
+        <img src="img/galeria/1.jpeg" alt="Imagen 1" />
+        <img src="img/galeria/2.jpeg" alt="Imagen 2" />
+        <img src="img/galeria/3.jpg" alt="Imagen 3" />
+        <img src="img/galeria/4.jpg" alt="Imagen 4" />
+        <img src="img/galeria/5.jpeg" alt="Imagen 5" />
+        <img src="img/galeria/6.jpg" alt="Imagen 6" />
+        <img src="img/galeria/7.jpeg" alt="Imagen 7" />
+        <img src="img/galeria/8.jpeg" alt="Imagen 8" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea rows="5" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 🏝️ Hotel Descanso Tropical- Isla de Margarita, Venezuela</p>
+      <p>Dirección: Av. 3 de Mayo, Juangriego, Isla de Margarita</p>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="social-icons">
+      <a href="https://wa.me/584123456789"  target="_blank" title="WhatsApp">
+        <img src="img/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com"  target="_blank" title="Instagram">
+        <img src="img/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com"  target="_blank" title="Facebook">
+        <img src="img/icons/facebook.svg" alt="Facebook">
+      </a>
+       <a href="https://www.tiktok.com"  target="_blank" title="tiktok">
+        <img src="img/icons/tiktok.svg" alt="tiktok">
+      </a>
+      <a href="mailto:info@hotelplayaelyaque.com" title="Correo Electrónico">
+        <img src="img/icons/mail.svg" alt="Email">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-container">
+    <button class="chatbot-btn" onclick="toggleChatbot()">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chat-header">Tu Recepcionista a la Orden</div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot">¡Hola! Soy tu asistente virtual del Hotel Descanso Tropical. ¿En qué puedo ayudarte?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." onkeypress="handleKeyPress(event)" />
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
