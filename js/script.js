@@ -67,7 +67,8 @@ const chatInput = document.getElementById('chatInput');
 const chatMessages = document.getElementById('chatMessages');
 
 function toggleChatbot() {
-  chatWindow.style.display = chatWindow.style.display === 'block' ? 'none' : 'block';
+  const chatWindow = document.getElementById("chatbotWindow");
+  chatWindow.style.display = chatWindow.style.display === "flex" ? "none" : "flex";
 }
 
 function handleKeyPress(e) {
