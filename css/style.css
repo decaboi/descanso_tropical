@@ -290,19 +290,20 @@ img {
 }
 
 .chatbot-window {
-  position: absolute;
-  width: 400px;
-  height: 1000px;
-  bottom: 65px;
-  right: 0;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  display: none;
   animation: fadeInUp 0.3s ease-in-out;
+  z-index: 9999;
+  display: none;
 }
 
 @keyframes fadeInUp {
@@ -321,6 +322,7 @@ img {
   color: white;
   padding: 15px;
   font-weight: bold;
+  text-align: center;
 }
 
 .chat-messages {
@@ -330,6 +332,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #f9f9f9;
 }
 
 .message {
@@ -348,13 +351,14 @@ img {
 .user {
   background: #dcf8c6;
   align-self: flex-end;
+  margin-left: auto;
 }
 
 .typing-indicator {
-  align-self: flex-start;
   font-size: 0.9rem;
   color: #666;
   font-style: italic;
+  align-self: flex-start;
 }
 
 .chat-input {
@@ -381,50 +385,6 @@ img {
 .chat-input button:hover {
   background: #0056b3;
 }
-
-/* ================== */
-/* === RESPONSIVE DESIGN === */
-/* ================== */
-
-/* MÓVILES (hasta 767px) */
-@media (max-width: 767px) {
-  .header .nav {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
-
-  .room-grid,
-  .service-grid,
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .contact-form {
-    max-width: 100%;
-  }
-
-  .chatbot-window {
-    width: 90%;
-    height: 400px;
-    bottom: 65px;
-    right: 5%;
-  }
-}
-
 /* TABLETS (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .room-grid {
@@ -491,4 +451,50 @@ img {
 .social-icons img {
   width: 100%;
   height: auto;
+}
+
+/* === NAVBAR RESPONSIVE === */
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block; /* Mostrar solo en móvil */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #007BFF;
+    z-index: 1000;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    transition: opacity 0.3s ease;
+    display: none; /* Oculto por defecto hasta que se active */
+    z-index: 999;
+  }
+
+  .nav a {
+    display: block;
+    margin: 5px 0;
+    color: #007BFF;
+    font-weight: normal;
+  }
 }
